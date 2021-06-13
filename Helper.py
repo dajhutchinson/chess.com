@@ -1,3 +1,6 @@
+"""
+    CHESS dot COM
+"""
 # Dictionary of descriptions for each game result code
 game_result_codes={
     "win":"Win",
@@ -15,4 +18,20 @@ game_result_codes={
     "threecheck":"Checked for the 3rd time",
     "timevsinsufficient":"Draw by timeout vs insufficient material",
     "bughousepartnerlose":"Bughouse partner lost"
+}
+
+"""
+    STANDARD ALGEBRAIC NOTATION (SAN)
+"""
+special_move_dict={
+    "O-O":"kingside castling",
+    "O-O-O":"queenside castling"
+}
+
+pieces_dict={
+    "K":"king",
+    "Q":"queen",
+    "R":"rook",
+    "B":"bishop",
+    "N":"knight"
 }
