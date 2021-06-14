@@ -33,10 +33,11 @@ def parse_san_movetext(movetext:str) -> [(str,dict)]:
         white_dets.update({"colour":"white","move_num":i})
         parsed_moves+=[(white_str,white_dets)]
 
-        # analyse black
-        black_str,black_dets=parse_san_move(white_black[1].split(" ")[0])
-        black_dets.update({"colour":"black","move_num":i})
-        parsed_moves+=[(black_str,black_dets)]
+        if len(white_black)==2:
+            # analyse black
+            black_str,black_dets=parse_san_move(white_black[1].split(" ")[0])
+            black_dets.update({"colour":"black","move_num":i})
+            parsed_moves+=[(black_str,black_dets)]
 
     return parsed_moves
 
