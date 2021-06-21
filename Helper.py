@@ -11,7 +11,7 @@ game_result_codes={
     "resigned":"Resigned",
     "stalemate":"Stalemate",
     "lose":"Lose",
-    "insufficient":"Insufficient material",
+    "insufficient":"Draw by Insufficient material",
     "50move":"Draw by 50-move rule",
     "abandoned":"Abandoned",
     "kingofthehill":"Opponent king reached the hill",
